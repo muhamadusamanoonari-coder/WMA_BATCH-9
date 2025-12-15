@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/*   Box model - inner content */
+.simple-box {
+    background-color: lightblue;
+    width: 200px;
+    /* No padding or border here, so total width is just 200px */
+}
+
+/*  BOX MODEL - CONTENT + padding + border */
+/*  width + right to left  */
+.width-experiment {
+    background-color: lightgreen;
+    width: 200px; 
+    
+    /* Adding padding inside */
+    padding: 20px;
+    
+    /* Adding border outside padding */
+    border: 5px solid red;
+    
+    /* Note: Even though width says 200px, 
+       this box will look much wider than the blue one 
+       because of the extra padding and border */
+}
+
+/*  height top to bottom */
+.height-experiment {
+    background-color: orange;
+    width: 200px;
+    
+    /* Setting a fixed height */
+    height: 100px;
+    
+    /* Adding padding */
+    padding: 20px;
+    
+    /* Adding a thick border */
+    border: 10px solid black;
+    
+    /* The total height will be 100 + 40 (padding) + 20 (border) = 160px */
+}

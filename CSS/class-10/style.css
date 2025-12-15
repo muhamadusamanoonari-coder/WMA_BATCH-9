@@ -1,0 +1,117 @@
+h1{
+    background-color: cadetblue;
+}
+/* flex box */
+
+/* ------------------------------------- */
+/* Pseudo Elements (::)*/
+/* before */
+/* after */
+/* first-line */
+pre::first-letter{
+    /* content: " * "; */
+    background-color: firebrick;
+    color: white;
+    font-size: 100px;
+}
+/* ::placeholder{
+    background-color: aqua;
+    color: darkcyan;
+} */
+::selection{
+    background-color: darkkhaki;
+    color: aliceblue;
+    font-size: 200px;
+}
+::marker{
+    color: blueviolet;
+}
+/* ---------------------------------------------------------- */
+/* Pseudo Class (:)*/
+/* Basic Pseudo Class */
+/* hover */
+/* focus - input*/
+/* active - a/button*/
+button:hover{
+    background-color: cornflowerblue;
+    color: white;
+}
+input:focus{
+    background-color: burlywood;
+}
+button:active{
+    background-color: red;
+}
+
+/* visited / unvisited  */
+
+/* -------------------- */
+
+/* Structural Pseudo Class */
+/* first child */
+/* last child */
+
+/* p:first-child{
+    background-color: rgb(209, 10, 83);
+}
+p:last-child{
+    background-color: rgb(10, 83, 209);
+} */
+
+/* nth-child */
+/* n for all  */
+/* even 2n */
+/* odd 2n+ 1 */
+
+
+/* p:nth-child(2n){
+    background-color: coral;
+}   */
+
+
+/* p:nth-child(2n+1){
+    background-color: blueviolet;
+} */
+/* p:nth-child(3){
+    background-color: darkcyan;
+} */
+/* p:last-child{
+    background-color: darkgoldenrod;
+} */
+/* p:only-child{
+    background-color: darkgoldenrod;
+} */
+
+/*  only child work whe there is one only then */
+
+p:not(.para){
+    background-color: darkorange;
+}
+/* ---------------------------------------------------------- */
+/* State Pseudo Class */
+/* enabled */
+input:enabled{
+    background-color: lightgreen;
+}
+/* disabled */
+
+input:disabled{
+    background-color: lightcoral;
+}
+/* read-only */
+
+input:read-only{
+    background-color: lightblue;
+}
+input:invalid{
+    border: 10px solid red;
+    color: royalblue;
+}
+/* read-write */
+
+
+/* ---------------------------------------------------------- */
+/* Attribute Selector [ ] */
+/* input[type="text"]{
+    background-color: lightgray;
+} */

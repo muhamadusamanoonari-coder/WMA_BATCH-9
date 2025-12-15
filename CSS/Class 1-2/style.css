@@ -1,0 +1,87 @@
+/* CSS Cascading Style Sheets */
+/* Types of styling */
+/* 1. User Agent stylesheet */
+/* 2. Browser Preference */
+/* 3. developer styling */
+h3{
+    background-color: antiquewhite;
+    font-size: 50px;
+}
+
+/* selectors */
+/* 1 . Element selector
+   give name of element like h1 and h2 or p or pre  */
+   /* block of code (styling) 
+   properties ( property : value ) */
+
+p{
+    background-color: blue;
+    color: black;
+    font-size: 80px;
+}
+
+/*  2 . class selector */
+/*    */
+
+.para2{
+    background-color: aqua;
+    font-size: larger;
+}
+
+/* 3 . ID selector */
+
+#head1{
+    background-color: aqua;
+}
+
+
+                  /*  Group selector */
+
+/* h3, pre, p{
+    background-color: aquamarine;
+    color: black;
+} */  
+
+/* Universal Selector */
+
+/* *{
+    background-color: brown;
+    color: blue;
+} */
+
+/*  common properties  */
+#head2{
+    background-color: turquoise;
+    font-size: 100px;
+    color: chartreuse;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid rebeccapurple;
+
+}
+
+
+/* Width and Height (responsiveness) */
+.container{
+    color: black;
+    border: 4px solid red;
+    width: 500px;
+    height: 100px;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+/*  Color and Background  */
+
+/* 1. name color  */
+/*  2. Hex color(#) */
+/* 3. RGB / RGBA - red , green , blue , alpha (opacity(transparency)) */
+/* 4. HSL / HSLA  | Hue saturation light   */
+
+#head3{
+    /* color: brown; */
+    /* color: #121212; */
+    /* color: rgb(117, 20 ,228); */
+    color: hsl(202, 87%, 44%);
+
+    
+}

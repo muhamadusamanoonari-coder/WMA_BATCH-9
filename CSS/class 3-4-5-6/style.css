@@ -1,0 +1,202 @@
+h1{
+    color: blue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+h2{
+    color: green;
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 30px;
+    margin-top: 40px;
+}
+p{
+    color: purple;
+    text-align:center;
+    font-family: Georgia, serif;
+    font-size: 24px;
+}
+
+header{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    text-decoration: dotted underline;
+}
+
+h3{
+    color: orange;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+h4{
+    color: brown;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 26px;
+    margin-top: 20px;
+}
+/*   Box model - inner content */
+/*  BOX MODEL - CONTENT + padding + border */
+/*  width + right to left  */
+/*  height top to bottom */
+
+/* round off - 9.6 = 9 + 1 = 10 */
+/*  9.4 = 9 */
+
+/*  Units  */
+/*  Absolute Units -  solidity */
+
+/*  pt - point - 1/72 inches */
+/*  px   - pixel = default size of text = 16px */
+
+/*  cm - centimeter  */
+/*  mm - millimeter  */
+/*  in  */
+/*  pc  */
+
+/*  Relative Units - responsivness */
+
+/*  em  - relative to parent element's font size */
+/*   1em = 16px / parent element font size */
+/* ------------------------------------------ */
+/*  rem -  realtive to route element  */
+/*  1rem = 16px / root element font size */
+/* ------------------------------------------ */
+/*  %  -  realtive to parent element's size and width  */
+/*  vw - relative to the viewport */
+/*  vh -  */
+/*  vmin  */
+/*  vmax  */
+/*  ch  */
+/*  ex  */
+/*  fr  */
+
+
+/*  float  */
+
+.container{
+    border: 5px;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+
+h5{
+    text-align: center;
+    /* float: right; */
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+header{
+    text-align: center;
+    /* float: right; */
+    /* clear: left; */
+}
+
+div.container2{
+    border: 5px;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+
+
+/* display properties */
+
+pre{
+    background-color: lightgray;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+
+}
+/* 
+div{
+    border: 5px solid black;
+    width: 600px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    box-sizing: content-box;
+} */
+
+/* combinators */
+/*  adv version of selectors */
+/*  div h1  - in this inside div all h1 will be targeted */
+/* 1) descendenrt combintor (space )--- inner container /element */
+
+/*  2) child combintor (>) -- inner element */
+
+/*  3) adjacent sibling combinator (+) -- next element/outer immediate - only one */
+
+/*  4) general sibling combinator (~) -- all next elements */
+
+
+/*  div h1  - descendent combinator  */
+/*  div > h1  - direct child combinator  */
+/*  div + h1  - adjacent sibling combinator  */
+/*  div ~ h1  - general sibling combinator  */
+ 
+
+
+/*  CSS functions  */
+
+/*  calc()  */
+/*  var()  */
+/*  min()  */
+/*  max()  */
+/*  clamp()  */
+
+/*  CSS Variables  */
+
+/*  --main-color: blue;  */
+/*  var(--main-color);  */
+/*  Pseudo-classes  */
+/*  :hover  */
+/*  :active  */
+/*  :focus  */
+/*  :nth-child()  */
+/*  :first-child  */
+/*  :last-child  */
+/*  :not()  */
+
+/*  Pseudo-elements  */
+
+/*  ::before  */
+/*  ::after  */
+/*  ::first-letter  */
+/*  ::first-line  */
+/*  Specificity  */
+/*  Inline styles  */
+/*  !important  */
+/*  CSS Reset  */
+/*  box-sizing: border-box;  */
+* {
+    box-sizing: border-box;
+}
+/*  End of style.css  */
+/*  Recent edits below  */
+/*  End of style.css  */
+
+
+div ~ h1{
+    background-color: tomato;
+}

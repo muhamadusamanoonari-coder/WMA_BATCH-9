@@ -1,0 +1,41 @@
+
+body {
+    background-color: #dddddd; 
+    font-family: sans-serif;
+}
+
+.main-heading {
+    text-align: center;
+    background-color: slateblue;
+    color: white;
+    padding: 20px;
+    margin: 0px;
+}
+
+.gallery-area {
+    background-color: white;
+    width: 90%;
+    margin-left: 5%; 
+    padding: 20px; 
+}
+
+
+.photo-box {
+    
+    float: center;
+    width: 28%; 
+    padding: 1%; 
+    margin: 1.6%; 
+    border: 5px solid #555;
+    background-color: #eee;
+    text-align: left;
+}
+
+.photo-box img {
+    width: 100%; 
+    height: auto; 
+}
+
+.photo-box h3 {
+    font-size: 1.5rem; 
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators Explanation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Combinators (Beginner Friendly)</h1>
+
+    <p>This page explains all four types of CSS Combinators with simple examples.</p>
+
+    <section>
+        <h2>1. Descendant Combinator </h2>
+        <div class="descendant-box">
+            <h1>Heading inside DIV (Descendant)</h1>
+            <div>
+                <h1>Deep Nested Heading (Still Descendant)</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>2. Child Combinator (&gt;)</h2>
+        <div class="child-box">
+            <h1>Direct Child Heading</h1>
+
+            <div>
+                <h1>NOT Direct Child (Nested)</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>3. Adjacent Sibling Combinator (+)</h2>
+
+        <div class="adjacent-box">
+            This is a DIV. The next H1 will be styled using + combinator.
+        </div>
+        <h1>First H1 After DIV (Adjacent Sibling)</h1>
+
+        <h1>Second H1 (NOT selected)</h1>
+    </section>
+    <section>
+        <h2>4. General Sibling Combinator (~)</h2>
+
+        <div class="general-box">
+            This is a DIV. All H1 after this div will be selected.
+        </div>
+        <h1>Sibling H1 One</h1>
+        <h1>Sibling H1 Two</h1>
+        <h1>Sibling H1 Three</h1>
+    </section>
+
+</body>
+</html>

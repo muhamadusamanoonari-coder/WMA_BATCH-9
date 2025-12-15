@@ -1,0 +1,26 @@
+DOCUMENTATION: 
+
+When we set a 'width' or 'height' in CSS, by default, we are only setting the size of the INNER CONTENT area. 
+
+If we add padding and borders, the element actually gets bigger on the screen.
+
+OBSERVATION 1: WIDTH (Left to Right)
+
+If we have:
+1 width: 200px
+2 padding: 20px (adds 20px to left and 20px to right)
+3 border: 5px (adds 5px to left and 5px to right)
+
+The total space this box takes on the screen is:
+200 + 20 + 20 + 5 + 5 = 250px total width.
+
+OBSERVATION 2: HEIGHT (Top to Bottom)
+
+If we have:
+1 height: 100px
+2 padding: 20px (adds 20px to top and 20px to bottom)
+3 border: 10px (adds 10px to top and 10px to bottom)
+
+The total height is:
+100 + 20 + 20 + 10 + 10 = 160px total height.
+
