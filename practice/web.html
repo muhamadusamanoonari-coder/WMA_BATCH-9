@@ -1,0 +1,44 @@
+st.set_page_config(
+    page_title="Data Analysis Dashboard",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+st.title("Data Analysis and Visualization Dashboard")
+st.sidebar.header("Controls")
+st.markdown(""" Dashboard, UPLOAD YOUR CSV FILE TO EXPLORE""")
+st.sidebar.markdown("---")
+st.sidebar.subheader("Data Upload")
+st.sidebar.write("Upload your data to begin the analysis.")
+print("Dataset Shape (Rows, Columns):")
+print(df.shape)
+
+print("Column Data Types and Non-Null Counts:")
+df.info()
+
+print("Descriptive statistics numeric ")
+print(df.describe())
+
+print("Descriptive statistics categorical")
+try:
+    print(df.describe(include='object'))
+except ValueError:
+    print("No categorical columns found.")
+missing_counts = df.isnull().sum()
+print(missing_counts)
+total_rows = len(df)
+missing_percentage = (missing_counts / total_rows) * 100
+missing_data_report = pd.DataFrame({
+    'Missing Count': missing_counts,
+    'Missing Percentage (%)': missing_percentage
+})
+print(missing_data_report[missing_data_report['Missing Count'] > 0].sort_values(by='Missing Count', ascending=False))
+print(f"Original dataset shape: {df.shape}")
+original_rows = df.shape[0]
+print(f"Shape after dropping rows: {df_dropped.shape}")
+new_rows = df_dropped.shape[0]
+print(f"Total rows removed: {original_rows - new_rows}")
+print(df_dropped.isnull().sum())
+numerical_cols = df_filled.select_dtypes(include=[np.number]).columns
+print(f"Numerical columns selected for filling: {list(numerical_cols)}")
+col_means = df_filled[numerical_cols].mean()
+df_filled[numerical_cols] = df_filled[numerical_cols].fillna(col_means)
