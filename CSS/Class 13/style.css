@@ -1,0 +1,29 @@
+h1{
+    font-size: 2.5em;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: red;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+.container div{
+    margin-bottom: 15px;
+    border: 5px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+/*  Media Query : Responsiveness Design */
+/*   1) Media : indicates t start the media query */
+/*   2) media-type : specifies the type of media (e.g., screen, print) */
+/*   3) media-features : specifies the features of the media (e.g., width, height, orientation) */
+/*   4) media-queries : combines media-type and media-features to apply styles based on specific conditions */

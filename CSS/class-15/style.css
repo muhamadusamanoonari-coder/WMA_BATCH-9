@@ -1,0 +1,263 @@
+/* Animations */
+/* @keyframes - defines the steps of an animation */
+/*  Animations properties - behaviour of animation */
+
+/* ------------------------------------------------------ */
+
+/* Animation name - name of the animation @keyframes */
+/* animation duration */
+/* animation iteration count - number of times the animation will repeat */
+/* animation timing function */
+/* animation delay */
+/* animation direction */
+/* animation fill mode */
+/* animation play state */
+/*  */
+
+.container{
+    border: 10px solid black;
+    width: 800px;
+    height: 1000px;
+}
+/* Animation properties */
+.container .item1{
+    width: 100px;
+    height: 100px;
+    border: 10px solid blue;
+    animation-name: screen1, moveRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.2s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    /* animation-fill-mode: forwards; */
+    /* animation-play-state: paused; */
+}
+/* Animation properties */
+.container .item2{
+    width: 100px;
+    height: 100px;
+    border: 10px solid blue;
+    animation-name: screen2, movediagonal;
+    animation-duration: 6s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.2s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    /* animation-fill-mode: forwards; */
+    /* animation-play-state: paused; */
+}   
+
+
+/* ------------------------------------ */
+
+
+/* Animation properties */
+.container .item3{
+    width: 100px;
+    height: 100px;
+    border: 10px solid blue;
+    animation-name: screen3, movedown;
+    animation-duration: 8s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.2s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    /* animation-fill-mode: forwards; */
+    /* animation-play-state: paused; */
+}
+
+
+/* ------------------------------------------------- */
+/* Animation properties */
+
+
+@keyframes screen1{
+   0% {
+    background-color: red;
+   }
+   10%{
+    background-color: orange;
+    border-radius: 10px;
+   }
+    20%{
+     background-color: yellow;
+     border-radius: 20px;
+    }
+    30%{
+     background-color: green;
+     border-radius: 30px;
+    }
+    40%{
+     background-color: blue;
+     border-radius: 40px;
+    }       
+    50%{
+     background-color: indigo;
+     border-radius: 50px;
+    }
+    60%{
+     background-color: violet;
+     border-radius: 60px;
+    }
+    70%{
+     background-color: pink;
+     border-radius: 70px;
+    }
+    80%{
+     background-color: brown;
+     border-radius: 80px;
+    }
+    90%{
+     background-color: grey;
+     border-radius: 90px;
+    }
+    100%{
+     background-color: black;
+     border-radius: 100px;
+    }
+}
+
+
+@keyframes screen2{
+   0% {
+    background-color: red;
+   }
+   10%{
+    background-color: orange;
+    border-radius: 10px;
+   }
+    20%{
+     background-color: yellow;
+     border-radius: 20px;
+    }
+    30%{
+     background-color: green;
+     border-radius: 30px;
+    }
+    40%{
+     background-color: blue;
+     border-radius: 40px;
+    }       
+    50%{
+     background-color: indigo;
+     border-radius: 50px;
+    }
+    60%{
+     background-color: violet;
+     border-radius: 60px;
+    }
+    70%{
+     background-color: pink;
+     border-radius: 70px;
+    }
+    80%{
+     background-color: brown;
+     border-radius: 80px;
+    }
+    90%{
+     background-color: grey;
+     border-radius: 90px;
+    }
+    100%{
+     background-color: black;
+     border-radius: 100px;
+    }
+}
+
+/* ---------------------------------------- */
+
+@keyframes screen3{
+   0% {
+    background-color: red;
+   }
+   10%{
+    background-color: orange;
+    border-radius: 10px;
+   }
+    20%{
+     background-color: yellow;
+     border-radius: 20px;
+    }
+    30%{
+     background-color: green;
+     border-radius: 30px;
+    }
+    40%{
+     background-color: blue;
+     border-radius: 40px;
+    }       
+    50%{
+     background-color: indigo;
+     border-radius: 50px;
+    }
+    60%{
+     background-color: violet;
+     border-radius: 60px;
+    }
+    70%{
+     background-color: pink;
+     border-radius: 70px;
+    }
+    80%{
+     background-color: brown;
+     border-radius: 80px;
+    }
+    90%{
+     background-color: grey;
+     border-radius: 90px;
+    }
+    100%{
+     background-color: black;
+     border-radius: 100px;
+    }
+}
+
+/* ------------------ */
+@keyframes movediagonal {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(699px, 699px); }
+}
+
+/* ------------------- */
+@keyframes movedown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(699px); }
+}
+/* ------------------------------ */
+
+@keyframes moveRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(699px); }
+}
+
+   
+
+/* Example of moving an element from left to right */
+
+
+
+
+
+
+
+
+
+
+/* .container .item{ */
+    /* width: 100px; */
+    /* height: 100px; */
+    /* background-color: red; */
+    /* animation-name: moveRight; Name of the @keyframes to be applied */
+    /* animation-duration: 4s; Duration of the animation */
+    /* animation-iteration-count: infinite; Number of times the animation will repeat */
+    /* animation-timing-function: linear; Speed curve of the animation */
+    /* animation-delay: 2s; Delay before the animation starts */
+    /* animation-direction: alternate; Direction of the animation */
+    /* animation-fill-mode: forwards; Retain the final state of the animation */
+    /* animation-play-state: paused; Pauses the animation */
+/* }  */
+/* @keyframes moveRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(200px); }
+} */

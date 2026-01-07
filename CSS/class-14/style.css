@@ -1,0 +1,115 @@
+.container , .transform_container{
+   border: 5px solid black;
+   height: 4000px;
+   width: 1000px;
+}
+.box1, .box2, .box3, .box4 , .box5, .box6, .box7, .box8, .box9 , .transform_box1, .transform_box2, .transform_box3, .transform_box4, .transform_box5{
+    border: 10px solid red;
+    height: 200px;
+    width: 200px;
+}
+
+/*  Animations */
+/*  transitions */
+/*   1) Property : which type of animation you want to have such color width or something else   */
+/*   2) Duration : how long the animation will take to complete   */
+/*   3) Timing Function : how the animation progresses over time (e.g., linear, ease-in, ease-out)   */
+/*   4) Delay : how long to wait before starting the animation   */
+
+.box1{
+    transition: width 3s ease 0.5s , background-color 3s ease 0.5s; 
+}
+.box2{
+  transition: width 3s linear 0.5s; 
+}
+.box3{
+    transition: width 3s ease-in 0.5s; 
+}
+.box4{
+    transition: width 3s ease-out 0.5s; 
+}
+.box5{
+    transition: width 3s ease-in-out 0.5s; 
+}
+.box6{
+    transition: width 3s step-start 0.5s; 
+}
+.box7{
+    transition: width 3s step-end 0.5s; 
+}
+.box8{
+    transition: width 3s steps(3, start) 0.5s; 
+}
+.box9{
+    transition: width 3s steps(3, end) 0.5s; 
+}
+.container div:hover{
+    width: 500px;
+    background-color: brown;
+}
+
+/* Transformations */
+/* translate : moves an element in 2D space */
+/* scale : changes the size of an element */
+/* rotate : rotates an element around its center */
+/* skew : skews an element along the X and Y axes */
+
+
+/* ----------------------------------------------------------- */
+
+.transform_container .transform_box1{
+    transition: transform 2s ease 0.5s;
+}
+
+.transform_container .transform_box1:hover{
+    transform: translate(300px, 200px);
+}
+
+/* ---------------------------------------- */
+
+.transform_container .transform_box2:hover{
+   transform: scale(5,3);
+}
+.transform_container .transform_box2{
+    transition: transform 2s ease 0.5s;
+}
+/* ---------------------------------------- */
+
+.transform_container .transform_box3{
+    transition: transform 2s ease 0.5s;
+}
+.transform_container .transform_box3:hover{
+    transform: rotate(45deg);
+}
+
+/* ---------------------------------------- */
+
+.transform_container .transform_box4{
+    transition: transform 2s ease 0.5s;
+}
+.transform_container .transform_box4:hover{
+    transform: skew(30deg,20deg);
+}
+/* ---------------------------------------- */
+.transform_container .transform_box5{
+    transition: transform 2s ease 0.5s;
+}
+.transform_container .transform_box5:hover{
+    transform: translate(200px,100px) scale(2,1.5) rotate(30deg) skew(20deg,10deg);
+}
+
+/* ---------------------------------------- */
+
+/* Animations */
+
+.anim_container{
+    border: 5px solid black;
+    height: 1000px;
+    width: 1000px;
+}
+.anim_container div{
+    border: 5px solid red;
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+}
